@@ -102,7 +102,7 @@ class lattice():
     (x1,y3)   .....     (x5,y3)    
     
         cols: [(x1,x2),(x2,x3),(x3,x4),(x4,x5)]
-        rows: [(y2,y3),(y1,y2)]
+        rows: [(y3,y2),(y2,y1)]
         """
         v_s, h_s = segments_in_bbox(tk, self.vertical_segments, self.horizontal_segments,tol=self.line_tol)
         cols, rows = zip(*self.table_bbox[tk])
